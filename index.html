@@ -1,0 +1,938 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Swiper cdn link -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css"
+    />
+    <!-- Bootstrap Cdn Link -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css"
+    />
+    <!-- bootstrap icon cdn -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css"
+    />
+    <!-- Google fonts cdn -->
+    <!-- Inter font cdn -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap"
+      rel="stylesheet"
+    />
+    <!-- fira code cdn -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <!-- leto font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <!-- raleway font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <!-- custom css -->
+    <link rel="stylesheet" href="assets/styles/style.css" />
+    <title>Tanvirul Islam</title>
+  </head>
+  <body>
+    <!-- Navbar start -->
+    <div class="container">
+      <!-- for screens larger -->
+      <nav class="navbar navbar-expand-lg d-none d-lg-block">
+        <div class="container-fluid">
+          <a class="navbar-brand text-white" href="#"
+            ><img src="assets/img/logo.png" style="height: 50px"
+          /></a>
+          <div
+            class="collapse navbar-collapse justify-content-center"
+            id="navbarNav"
+          >
+            <ul class="navbar-nav mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link" href="index.html">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#about">About</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#specialized">Service</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#resume">Resume</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#portfolio">Portfolio</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#testimonial">Testimonial</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#contact">Contact</a>
+              </li>
+            </ul>
+          </div>
+          <div class="d-flex justify-content-start">
+            <button
+              class="hire-btn"
+              data-bs-toggle="modal"
+              data-bs-target="#register-modal"
+            >
+              Hire Me <i class="bi bi-envelope-fill"></i>
+            </button>
+          </div>
+        </div>
+      </nav>
+
+      <!-- for screens smaller than lg -->
+      <nav class="navbar navbar-expand-lg d-block d-lg-none">
+        <div class="container-fluid">
+          <a class="navbar-brand text-white" href="#"
+            ><img src="assets/img/logo.png" style="height: 50px"
+          /></a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarNav2"
+            aria-controls="navbarNav2"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="bi bi-list"></span>
+          </button>
+          <div
+            class="collapse navbar-collapse justify-content-center"
+            id="navbarNav2"
+          >
+            <ul class="navbar-nav mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link" href="index.html">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#about">About</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#specialized">Service</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#resume">Resume</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#portfolio">Portfolio</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#testimonial">Testimonial</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#contact">Contact</a>
+              </li>
+              <li class="nav-item" id="hirebtn">
+                <button class="hire-btn">
+                  <a href="#" style="color: white"
+                    >Hire Me <i class="bi bi-envelope-fill"></i
+                  ></a>
+                </button>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </div>
+    <!-- Navbar end -->
+
+    <!-- Modal start -->
+    <div
+      class="modal fade"
+      id="register-modal"
+      tabindex="-1"
+      aria-labelledby="exampleModalLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+          <div class="modal-header text-dark">
+            <h1
+              class="modal-title fs-5 d-flex align-items-center"
+              id="exampleModalLabel"
+            >
+              <i class="bi bi-person-lines-fill fs-3 me-2"></i> Communication is
+              key!
+            </h1>
+            <button
+              type="reset"
+              class="btn-close shadow-none"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="modal-body">
+            <span
+              class="badge rounded-pill text-bg-warning text-dark mb-3 text-wrap lh-base"
+              >One Plus One Equals Three: The Magic of Collaboration. Let's
+              bridge the gap and stay connected for endless possibilities!</span
+            >
+            <div class="container-fluid">
+              <form action="">
+                <input
+                  type="text"
+                  placeholder="Enter your name"
+                  class="name col-12"
+                /><br />
+                <input
+                  type="email"
+                  placeholder="Enter your email"
+                  class="email col-12"
+                /><br />
+                <select
+                  class="form-select mb-4"
+                  aria-label="Default select example"
+                >
+                  <option selected>Web Design</option>
+                  <option value="1">Web Davelopment With PHP</option>
+                  <option value="2">Graphic Design</option>
+                  <option value="3">Other</option>
+                </select>
+                <textarea
+                  name=""
+                  class="msg col-12"
+                  id=""
+                  cols="30"
+                  rows="10"
+                  style="height: 150px"
+                  placeholder="Discrive your mind, I'm ready to listen"
+                ></textarea
+                ><br />
+                <input type="submit" value="Submit" class="submit col-12" />
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Modal end -->
+
+    <!-- hero section start -->
+    <div class="container hero mb-5 mt-5">
+      <div class="row align-items-end">
+        <div class="about-sm col-sm-12 col-lg-6 text-start">
+          <div class="text">
+            <p class="inro">Introducing</p>
+            <h4>Hello there, I'm</h4>
+            <br />
+            <!-- <h1>Tanvirul Islam</h1> -->
+            <svg viewbox="-10 0 150 20">
+              <defs>
+                <linearGradient id="gradient" x1="0" x2="0" y1="0" y2="1">
+                  <stop offset="90%" stop-color="#00bd95" />
+                  <stop offset="10%" stop-color="#ffff" />
+                </linearGradient>
+                <pattern
+                  id="wave"
+                  x="0"
+                  y="0"
+                  width="120"
+                  height="20"
+                  patternUnits="userSpaceOnUse"
+                >
+                  <path
+                    id="wavePath"
+                    d="M-40 9 Q-30 7 -20 9 T0 9 T20 9 T40 9 T60 9 T80 9 T100 9 T120 9 V20 H-40z"
+                    mask="url(#mask)"
+                    fill="url(#gradient)"
+                  >
+                    <animateTransform
+                      attributeName="transform"
+                      begin="0s"
+                      dur="1.5s"
+                      type="translate"
+                      from="0,0"
+                      to="40,0"
+                      repeatCount="indefinite"
+                    />
+                  </path>
+                </pattern>
+              </defs>
+              <text
+                text-anchor="middle"
+                x="50"
+                y="15"
+                font-size="14"
+                font-weight="1000"
+                fill="url(#wave)"
+                fill-opacity="0.9"
+              >
+                TANVIRUL ISLAM
+              </text>
+              <text
+                text-anchor="middle"
+                x="50"
+                y="15"
+                font-size="14"
+                font-weight="1000"
+                fill="url(#gradient)"
+                fill-opacity="0.4"
+              >
+                TANVIRUL ISLAM
+              </text>
+            </svg>
+            <!-- <h1>Tanvirul Islam</h1> -->
+            <h3>
+              <a
+                href=""
+                class="typewrite"
+                data-period="2000"
+                data-type='[ "Full Stack Web Daveloper", "A Creative Web Designer", "A Creative Graphic Designer" ]'
+              >
+                <span class="wrap"></span>
+              </a>
+            </h3>
+            <br />
+            <p>
+              Meet Tanvirul - a masterful web developer who weaves magic with
+              HTML, CSS, Bootstrap, PHP, and JavaScript to build captivating web
+              applications. He is also a gifted graphic designer who brings
+              ideas to life with his stunning designs across various media
+              platforms.
+            </p>
+            <br />
+          </div>
+          <div class="herobtn">
+            <button class="cotact-btn">
+              <a href="#contact"
+                >Contact me <i class="bi bi-envelope-fill"></i
+              ></a>
+            </button>
+            <button
+              class="resume-btn"
+              style="margin-left: 10px"
+              data-bs-toggle="modal"
+              data-bs-target="#resume-modal"
+            >
+              Get Resume <i class="bi bi-arrow-right"></i>
+            </button>
+          </div>
+          <br />
+          <div class="social">
+            <h6>Find Me On:</h6>
+            <br />
+            <i class="bi bi-facebook"></i>
+            <i class="bi bi-instagram"></i>
+            <i class="bi bi-twitter"></i>
+            <i class="bi bi-linkedin"></i>
+            <i class="bi bi-behance"></i>
+            <i class="bi bi-github"></i>
+          </div>
+        </div>
+        <div class="col-sm-12 col-lg-6 img-sec text-center">
+          <img src="assets/img/me1.png" style="height: 600px" />
+        </div>
+      </div>
+    </div>
+    <!-- hero section end -->
+
+    <!-- Modal for resume start -->
+    <div
+      class="modal fade"
+      id="resume-modal"
+      tabindex="-1"
+      aria-labelledby="exampleModalLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog modal-lg">
+        <div class="modal-content cv-modal">
+          <div class="modal-header text-dark">
+            <h2
+              class="modal-title fs-5 d-flex align-items-center"
+              id="exampleModalLabel"
+            >
+              <i class="bi bi-file-text fs-3 me-2"></i>Educaton And Experience
+            </h2>
+            <button
+              type="reset"
+              class="btn-close shadow-none"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="modal-body">
+            <section id="resume" class="resume mb-5">
+              <div class="container">
+                <div class="row">
+                  <div class="col-lg-6">
+                    <h3 class="resume-title"><strong>Sumary</strong></h3>
+                    <div class="resume-item">
+                      <h4>Tanvirul Islam</h4>
+                      <p>
+                        <em
+                          >I'm a skilled web developer using HTML, CSS,
+                          Bootstrap, PHP, and JavaScript to craft captivating
+                          web apps. Also a gifted graphic designer with stunning
+                          designs across multiple media platforms.</em
+                        >
+                      </p>
+                      <ul>
+                        <li>Faridabad, Dhaka, Bangladesh.</li>
+                        <li>+880 1893-806327</li>
+                        <li>amar56390043@gmail.com</li>
+                      </ul>
+                    </div>
+                    <h3 class="resume-title"><strong>Education</strong></h3>
+                    <div class="resume-item">
+                      <h4>Master of Fine Arts &amp; Graphic Design</h4>
+                      <h5>2020-2021</h5>
+                      <p><em>SR Institute of Design, Dhanmondi, Dhaka</em></p>
+                      <p>
+                        Qui deserunt veniam. Et sed aliquam labore tempore sed
+                        quisquam iusto autem sit. Ea vero voluptatum qui ut
+                        dignissimos deleniti nerada porti sand markend
+                      </p>
+                    </div>
+                    <div class="resume-item">
+                      <h4>Web Davelopment with PHP & Laravel</h4>
+                      <h5>2020-2021</h5>
+                      <p><em>SR Institute of Design, Dhanmondi, Dhaka</em></p>
+                      <p>
+                        Quia nobis sequi est occaecati aut. Repudiandae et iusto
+                        quae reiciendis et quis Eius vel ratione eius unde vitae
+                        rerum voluptates asperiores voluptatem Earum molestiae
+                        consequatur neque etlon sader mart dila
+                      </p>
+                    </div>
+                  </div>
+                  <div class="col-lg-6">
+                    <h3 class="resume-title">
+                      <strong>Professional Experience</strong>
+                    </h3>
+                    <div class="resume-item">
+                      <h4>Senior graphic design specialist</h4>
+                      <h5>2021 - Present</h5>
+                      <p><em>asb.com.bd, Banani, Dhaka-1213, BD</em></p>
+                      <ul>
+                        <li>
+                          Lead in the design, development, and implementation of
+                          the graphic, layout, and production communication
+                          materials
+                        </li>
+                        <li>
+                          Delegate tasks to the 7 members of the design team and
+                          provide counsel on all aspects of the project.
+                        </li>
+                        <li>
+                          Supervise the assessment of all graphic materials in
+                          order to ensure quality and accuracy of the design
+                        </li>
+                        <li>
+                          Oversee the efficient use of production project
+                          budgets ranging from $2,000 - $25,000
+                        </li>
+                      </ul>
+                    </div>
+                    <div class="resume-item">
+                      <h4>Web designer & daveloper</h4>
+                      <h5>2022 - Present</h5>
+                      <p><em>Accounting Solutions Bangladesh, Dhaka</em></p>
+                      <p></p>
+                      <ul>
+                        <li>
+                          Developed numerous marketing programs (logos,
+                          brochures,infographics, presentations, and
+                          advertisements).
+                        </li>
+                        <li>
+                          Managed up to 5 projects or tasks at a given time
+                          while under pressure
+                        </li>
+                        <li>
+                          Recommended and consulted with clients on the most
+                          appropriate graphic design
+                        </li>
+                        <li>
+                          Created 4+ design presentations and proposals a month
+                          for clients and account managers
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </section>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Modal for resume start -->
+
+    <!-- about section start -->
+    <div id="about" class="container mb-5">
+      <div class="row align-items-center">
+        <div class="col-sm-12 col-lg-6 about-img">
+          <img
+            src="assets/img/1.jpg"
+            alt=""
+            style="height: 400px; border-radius: 15px"
+          />
+        </div>
+        <div class="col-sm-12 col-lg-6 aboutme">
+          <h5>About Me</h5>
+          <h3>
+            I am Tanvirul Islam. A Graphic Designer Web Designer And Web
+            Daveloper.
+          </h3>
+          <p>
+            Welcome to my digital universe! I am Tanvirul - a skilled web
+            developer who can turn your wildest imaginations into tangible
+            digital solutions using HTML, CSS, Bootstrap, PHP, and JavaScript. I
+            take pride in creating exceptional web applications that are not
+            only visually captivating but also highly functional. Additionally,
+            I am a gifted graphic designer who can elevate your brand to the
+            next level with eye-catching designs. From logos to social media
+            posts, I've got you covered on all media platforms. I am deeply
+            passionate about my work and strive to deliver the best results to
+            my clients. Let's collaborate and transform your ideas into reality
+            with my expertise and creativity!
+            <br /><button class="read-more mt-3">
+              <a href="inc/portfolio.html">See Portfolio</a>
+              <i class="bi bi-arrow-right"></i>
+            </button>
+          </p>
+        </div>
+      </div>
+    </div>
+    <!-- about section end -->
+
+    <!-- specialized start here -->
+    <section>
+      <div id="specialized" class="container mb-5">
+        <h2>What I Can Do</h2>
+        <div class="row">
+          <div class="col-sm-12 col-lg-4">
+            <div class="card text-center">
+              <div class="card-body">
+                <div><i class="bi bi-bezier"></i></div>
+                <br />
+                <h3>Graphic Design</h3>
+                <h6>
+                  I'm a Proffesional Graphic Designer With 4+ Years Experience.
+                </h6>
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-12 col-lg-4">
+            <div class="card text-center">
+              <div class="card-body">
+                <div><i class="bi bi-code-slash"></i></div>
+                <br />
+                <h3>Web Davelopment</h3>
+                <h6>
+                  I'm a Proffesional Graphic Designer With 4+ Years Experience.
+                </h6>
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-12 col-lg-4">
+            <div class="card text-center">
+              <div class="card-body">
+                <div><i class="bi bi-globe2"></i></div>
+                <br />
+                <h3>Web Design</h3>
+                <h6>
+                  I'm a Proffesional Web Designer With 1+ Years Experience.
+                </h6>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- specialized end here -->
+
+    <!-- Skills start -->
+    <section id="skills">
+      <div class="container mb-5">
+        <h2>My Skills</h2>
+        <div class="swiper mySwiper mb-5">
+          <div class="swiper-wrapper mb-5">
+            <div class="swiper-slide text-center">
+              <img src="assets/img/html.png" style="height: 250px" />
+              <h5 class="mt-2">HTML</h5>
+            </div>
+            <div class="swiper-slide text-center">
+              <img src="assets/img/css.png" style="height: 250px" />
+              <h5 class="mt-2">CSS</h5>
+            </div>
+            <div class="swiper-slide text-center">
+              <img src="assets/img/Bootstrap.png" style="height: 250px" />
+              <h5 class="mt-2">Bootstrap</h5>
+            </div>
+            <div class="swiper-slide text-center">
+              <img src="assets/img/js.png" style="height: 250px" />
+              <h5 class="mt-2">JavaScript</h5>
+            </div>
+            <div class="swiper-slide text-center">
+              <img src="assets/img/react.png" style="height: 250px" />
+              <h5 class="mt-2">React Js</h5>
+            </div>
+            <div class="swiper-slide text-center">
+              <img src="assets/img/swiper.svg" style="height: 250px" />
+              <h5 class="mt-2">Swiper Js</h5>
+            </div>
+            <div class="swiper-slide text-center">
+              <img src="assets/img/php.png" style="height: 250px" />
+              <h5 class="mt-2">PHP</h5>
+            </div>
+            <div class="swiper-slide text-center">
+              <img src="assets/img/mysql.png" style="height: 250px" />
+              <h5 class="mt-2">MySql</h5>
+            </div>
+            <div class="swiper-slide text-center">
+              <img src="assets/img/illustrator.png" style="height: 250px" />
+              <h5 class="mt-2">Adobe Illustrator</h5>
+            </div>
+            <div class="swiper-slide text-center">
+              <img src="assets/img/photoshop.png" style="height: 250px" />
+              <h5 class="mt-2">Adobe Photoshop</h5>
+            </div>
+            <div class="swiper-slide text-center">
+              <img src="assets/img/canva.png" style="height: 250px" />
+              <h5 class="mt-2">Canva</h5>
+            </div>
+          </div>
+          <div class="swiper-pagination"></div>
+        </div>
+      </div>
+    </section>
+    <!-- Skills end -->
+
+    <!-- Resume start -->
+    <section id="resume" class="resume mb-5">
+      <div class="container">
+        <div class="row">
+          <h2>Educaton And Experience</h2>
+          <div class="col-lg-6">
+            <h3 class="resume-title"><strong>Sumary</strong></h3>
+            <div class="resume-item">
+              <h4>Tanvirul Islam</h4>
+              <p>
+                <em
+                  >I'm a skilled web developer using HTML, CSS, Bootstrap, PHP,
+                  and JavaScript to craft captivating web apps. Also a gifted
+                  graphic designer with stunning designs across multiple media
+                  platforms.</em
+                >
+              </p>
+              <ul>
+                <li>Faridabad, Dhaka, Bangladesh.</li>
+                <li>+880 1893-806327</li>
+                <li>amar56390043@gmail.com</li>
+              </ul>
+            </div>
+            <h3 class="resume-title"><strong>Education</strong></h3>
+            <div class="resume-item">
+              <h4>Master of Fine Arts &amp; Graphic Design</h4>
+              <h5>2020-2021</h5>
+              <p><em>SR Institute of Design, Dhanmondi, Dhaka</em></p>
+              <p>
+                Qui deserunt veniam. Et sed aliquam labore tempore sed quisquam
+                iusto autem sit. Ea vero voluptatum qui ut dignissimos deleniti
+                nerada porti sand markend
+              </p>
+            </div>
+            <div class="resume-item">
+              <h4>Web Davelopment with PHP & Laravel</h4>
+              <h5>2020-2021</h5>
+              <p><em>SR Institute of Design, Dhanmondi, Dhaka</em></p>
+              <p>
+                Quia nobis sequi est occaecati aut. Repudiandae et iusto quae
+                reiciendis et quis Eius vel ratione eius unde vitae rerum
+                voluptates asperiores voluptatem Earum molestiae consequatur
+                neque etlon sader mart dila
+              </p>
+            </div>
+          </div>
+          <div class="col-lg-6">
+            <h3 class="resume-title">
+              <strong>Professional Experience</strong>
+            </h3>
+            <div class="resume-item">
+              <h4>Senior graphic design specialist</h4>
+              <h5>2021 - Present</h5>
+              <p><em>asb.com.bd, Banani, Dhaka-1213, BD</em></p>
+              <ul>
+                <li>
+                  Lead in the design, development, and implementation of the
+                  graphic, layout, and production communication materials
+                </li>
+                <li>
+                  Delegate tasks to the 7 members of the design team and provide
+                  counsel on all aspects of the project.
+                </li>
+                <li>
+                  Supervise the assessment of all graphic materials in order to
+                  ensure quality and accuracy of the design
+                </li>
+                <li>
+                  Oversee the efficient use of production project budgets
+                  ranging from $2,000 - $25,000
+                </li>
+              </ul>
+            </div>
+            <div class="resume-item">
+              <h4>Web designer & daveloper</h4>
+              <h5>2022 - Present</h5>
+              <p><em>Accounting Solutions Bangladesh, Dhaka</em></p>
+              <p></p>
+              <ul>
+                <li>
+                  Developed numerous marketing programs (logos,
+                  brochures,infographics, presentations, and advertisements).
+                </li>
+                <li>
+                  Managed up to 5 projects or tasks at a given time while under
+                  pressure
+                </li>
+                <li>
+                  Recommended and consulted with clients on the most appropriate
+                  graphic design
+                </li>
+                <li>
+                  Created 4+ design presentations and proposals a month for
+                  clients and account managers
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Resume end -->
+
+    <!-- portfolio start -->
+    <div class="container mb-5" id="portfolio">
+      <h2>Featured My Work</h2>
+      <div class="swiper mySwiper">
+        <div class="swiper-wrapper mb-5">
+          <div class="swiper-slide text-center">
+            <div class="card">
+              <img src="assets/img/1.jpg" alt="" height="400px" />
+              <div class="card-body">
+                <h5>Accounting Software Landing Page</h5>
+                <p>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo,
+                  laudantium accusamus nisi sapiente enim at?
+                </p>
+                <button class="read-more col-12">
+                  Full View <i class="bi bi-arrow-right"></i>
+                </button>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-slide text-center">
+            <div class="card">
+              <img src="assets/img/1.jpg" alt="" height="400px" />
+              <div class="card-body">
+                <h5>Accounting Software Landing Page</h5>
+                <p>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo,
+                  laudantium accusamus nisi sapiente enim at?
+                </p>
+                <button class="read-more col-12">
+                  Full View <i class="bi bi-arrow-right"></i>
+                </button>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-slide text-center">
+            <div class="card">
+              <img src="assets/img/1.jpg" alt="" height="400px" />
+              <div class="card-body">
+                <h5>Accounting Software Landing Page</h5>
+                <p>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo,
+                  laudantium accusamus nisi sapiente enim at?
+                </p>
+                <button class="read-more col-12">
+                  Full View <i class="bi bi-arrow-right"></i>
+                </button>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-slide text-center">
+            <div class="card">
+              <img src="assets/img/1.jpg" alt="" height="400px" />
+              <div class="card-body">
+                <h5>Accounting Software Landing Page</h5>
+                <p>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo,
+                  laudantium accusamus nisi sapiente enim at?
+                </p>
+                <button class="read-more col-12">
+                  Full View <i class="bi bi-arrow-right"></i>
+                </button>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-slide text-center">
+            <div class="card">
+              <img src="assets/img/1.jpg" alt="" height="400px" />
+              <div class="card-body">
+                <h5>Accounting Software Landing Page</h5>
+                <p>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo,
+                  laudantium accusamus nisi sapiente enim at?
+                </p>
+                <button class="read-more col-12">
+                  Full View <i class="bi bi-arrow-right"></i>
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="swiper-pagination"></div>
+      </div>
+    </div>
+    <!-- portfolio end -->
+
+    <!-- testimonials start -->
+    <section id="testimonial" class="container mb-5">
+      <div class="testimonials">
+        <h2>What My Clints Says</h2>
+        <div class="testimonial-container">
+          <div class="progress-bar"></div>
+          <div class="bi bi-quote"></div>
+          <!-- <div class="bi bi-quote"></div> -->
+          <p class="testimonial">
+            Working with Tanvir was a pleasure! He was attentive to our needs
+            and created a website that went above and beyond our expectations.
+            We gave him our ideas, and he was able to produce a fresh, new look
+            for our website. We would highly recommend Tanvir to anyone in need
+            of top-quality web design services.
+          </p>
+          <div class="user">
+            <img
+              src="https://randomuser.me/api/portraits/women/46.jpg"
+              alt="user"
+              class="user-image"
+            />
+            <div class="user-details">
+              <h4 class="username">Shakibul Islam</h4>
+              <p class="role">Web Daveloper</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- testimonials end -->
+
+    <!-- Contact start -->
+    <section id="contact">
+      <div class="container mb-5">
+        <h2>Shoot me a message!</h2>
+        <div class="row align-items-center">
+          <div class="col-lg-6 col-sm-12">
+            <h5>
+              Let's bridge the gap and stay connected for endless possibilities!
+            </h5>
+            <form action="">
+              <input
+                type="text"
+                placeholder="Enter your name"
+                class="name col-12"
+              /><br />
+              <input
+                type="email"
+                placeholder="Enter your email"
+                class="email col-12"
+              /><br />
+              <textarea
+                name=""
+                class="msg col-12"
+                id=""
+                cols="30"
+                rows="10"
+                placeholder="I'm ready to listen and understand your point of view..."
+              ></textarea
+              ><br />
+              <input type="submit" value="Submit" class="submit col-12" />
+            </form>
+          </div>
+          <div class="col-lg-6 col-sm-12">
+            <img src="assets/img/contast1.png" alt="" style="height: 300px" />
+            <h6><i class="bi bi-envelope"></i> amar56390043@gmil.com</h6>
+            <br />
+            <h6><i class="bi bi-telephone"></i> +880 1893-806327</h6>
+            <br />
+            <h6><i class="bi bi-geo-alt-fill"></i> Faridabad, Dhaka, BD</h6>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Contact end -->
+
+    <!-- Footer start -->
+    <footer id="footer">
+      <div class="container">
+        <div class="copyright">
+          &copy; Copyright <strong><span>Tanvir</span></strong
+          >. All Rights Reserved
+        </div>
+      </div>
+    </footer>
+    <!-- Footer end -->
+
+    <!-- script -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
+      integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3"
+      crossorigin="anonymous"
+    ></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.min.js"
+      integrity="sha384-cuYeSxntonz0PPNlHhBs68uyIAVpIIOZZ5JqeqvYYIcEL727kskC66kF92t6Xl2V"
+      crossorigin="anonymous"
+    ></script>
+    <!-- Custom script -->
+    <script src="assets/scripts/script.js"></script>
+    <!-- Initialize Swiper -->
+    <script>
+      var swiper = new Swiper(".mySwiper", {
+        spaceBetween: 40,
+        pagination: {
+          el: ".swiper-pagination",
+        },
+        breakpoints: {
+          320: {
+            slidesPerView: 1,
+          },
+          640: {
+            slidesPerView: 1,
+          },
+          768: {
+            slidesPerView: 2,
+          },
+          1024: {
+            slidesPerView: 3,
+          },
+        },
+      });
+    </script>
+  </body>
+</html>
